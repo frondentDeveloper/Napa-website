@@ -1,0 +1,926 @@
+.myResume {
+  width: 100%;
+  height: 100vh;
+  padding: 2% 4%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .forPrev {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  .about-resume {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    justify-content: center;
+
+    .resume-left {
+
+      padding: 20px;
+      margin-right: 30px;
+      width: 65%;
+      height: auto;
+      background: #FFFFFF;
+      box-shadow: 0px -2px 14px rgba(0, 0, 0, 0.16), 0px 40px 45px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+
+      .line-blue-mobile {
+        display: none;
+        opacity: 0.6;
+        margin-top: 25px;
+        width: 80%;
+        height: 2px;
+        background: rgb(255, 250, 250);
+        background: linear-gradient(90deg, rgba(255, 250, 250, 1) 3%, rgba(53, 126, 206, 1) 10%, rgba(53, 126, 206, 1) 83%, rgba(255, 255, 255, 1) 93%);
+      }
+      .box-for-planshet {
+        display: none;
+      }
+      .box-for-planshet-two{
+        display: none;
+
+      }
+      .text-about-me-planshet{
+        display: none;
+      }
+
+      .avatar-person {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+
+        .ForFlex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .avatar-photo {
+          overflow: hidden;
+          width: 78px;
+          height: 78px;
+          border-radius: 50%;
+          background-color: #7e8791;
+          margin-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+
+          .icon-user {
+            width: 100%;
+
+            &:before {
+              font-size: 40px;
+              color: white;
+            }
+          }
+        }
+
+        .person-name {
+          margin-right: 50px;
+
+          .nameOne {
+            display: flex;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 16px;
+            color: black;
+
+            p {
+              margin-right: 10px;
+            }
+          }
+
+          .persons-job {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: black;
+            letter-spacing: 2px;
+          }
+        }
+
+        .progress-person {
+          margin-left: 50px;
+
+          .jobSuccess {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #5A5A5A;;
+
+          }
+
+          .pracentPerson {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 16px;
+          }
+
+          .progressPerson {
+            margin-top: 2px;
+
+            .progress {
+              height: 3.5px;
+              margin-bottom: 3px;
+            }
+
+
+          }
+        }
+
+        .like-person {
+          cursor: pointer;
+          width: 34px;
+          height: 34px;
+          background: linear-gradient(193.15deg, rgba(230, 249, 255, 0.75) -17.4%, rgba(227, 235, 244, 0.75) 96%);
+          border-radius: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          .edit-profile {
+            cursor: pointer;
+            position: absolute;
+            bottom: -75px;
+          }
+        }
+      }
+
+      .box-for-experience {
+        font-size: 19px;
+        line-height: 31px;
+        letter-spacing: 0.05em;
+        padding-right: 45px;
+        overflow: hidden;
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+
+      }
+
+      .box-for-experience2 {
+        font-size: 19px;
+        line-height: 31px;
+        letter-spacing: 0.05em;
+        padding-right: 45px;
+        overflow: hidden;
+        margin-top: 25px;
+        width: 100%;
+        height: 130px;
+      }
+
+      .readMore {
+        font-size: 19px;
+        margin-top: 15px;
+        cursor: pointer;
+        color: #0b5ed7;
+      }
+
+      .line-blue {
+        opacity: 0.6;
+        margin-top: 25px;
+        width: 80%;
+        height: 2px;
+        background: rgb(255, 250, 250);
+        background: linear-gradient(90deg, rgba(255, 250, 250, 1) 3%, rgba(53, 126, 206, 1) 10%, rgba(53, 126, 206, 1) 83%, rgba(255, 255, 255, 1) 93%);
+
+
+      }
+
+      .add-video-box{
+        .add-video{
+          cursor: pointer;
+          margin-top: 40px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 9px;
+          color: #535353;
+        }
+      }
+           .workHistory {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 25px;
+
+
+        .nav-tabs {
+          border: none;
+
+          .nav-item {
+
+            .active {
+              transition: none !important;
+              background-color: transparent !important;
+              color: #1D71B8 !important;
+              border-bottom: 2px solid #1D71B8 !important;
+            }
+
+            .nav-link {
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              border-bottom: 2px solid gray;
+              color: black;
+            }
+          }
+        }
+
+        .tab-content {
+          .tab-pane {
+            .paginationBttns {
+              margin-top: 40px;
+              display: flex !important;
+              align-items: center;
+              width: 40%;
+              list-style: none;
+              justify-content: flex-start;
+
+              a {
+                margin-right: 30px;
+                color: #ABABAB;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+              }
+
+              .paginationActive a {
+                color: #1D71B8;
+              }
+            }
+          }
+
+          .active {
+            background-color: transparent !important;
+          }
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 16px;
+          margin-bottom: 25px;
+
+        }
+      }
+
+      .work-name {
+        margin-top: 40px;
+        color: #1D71B8;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+      }
+
+      .stars-for-level {
+
+        margin-top: 10px;
+        display: flex;
+        align-items: end;
+
+        .for-text {
+          font-weight: normal;
+          font-size: 14px;
+          margin-right: 15px;
+          letter-spacing: 0.05em;
+        }
+
+        .date-work {
+          font-weight: 300;
+          font-size: 9.64px;
+          line-height: 12px;
+        }
+
+        .for-icon {
+          margin-right: 10px;
+        }
+      }
+
+      .about-work {
+        padding-right: 50px;
+        margin-top: 25px;
+        letter-spacing: 0.05em;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 26px;
+        color: black;
+      }
+
+      .price-work {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: black;
+      }
+
+    }
+
+    .resume-right {
+      background: #FFFFFF;
+      box-shadow: 0 40px 41px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
+      width: 30%;
+      height: auto;
+      padding: 20px;
+
+      .view-profile {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 16px;
+      }
+
+      .all-view {
+        cursor: pointer;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      .line-blue {
+        opacity: 0.6;
+        margin-top: 25px;
+        width: 100%;
+        height: 2px;
+        background: rgb(255, 250, 250);
+        background: linear-gradient(90deg, rgba(255, 250, 250, 1) 3%, rgba(53, 126, 206, 1) 10%, rgba(53, 126, 206, 1) 83%, rgba(255, 255, 255, 1) 93%);
+
+
+      }
+
+      .box-for-total {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .totals {
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+
+          p {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            text-align: center;
+            color: #8D8D8D;
+          }
+        }
+      }
+
+      .available-times {
+        margin-top: 50px;
+        width: 100%;
+
+        .available-times-text {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 16px;
+        }
+
+        .available-times-icon {
+          margin-top: 15px;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .text-available {
+            display: flex;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+
+            p {
+              font-size: 18px;
+              margin-left: 10px;
+              font-weight: normal;
+            }
+          }
+
+          .edit-available {
+            margin-right: 60px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .link-projects {
+        .text-name-projects {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 16px;
+          margin-bottom: 20px;
+          margin-top: 50px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .verification {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+        .text-verification {
+          margin-right: 20px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 16px;
+        }
+
+        .icon-verification {
+          position: relative;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .tick {
+            top: 0;
+            position: absolute;
+            z-index: 10;
+          }
+
+          .tick2 {
+            position: absolute;
+          }
+        }
+      }
+
+      .educations {
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+        .name-education {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .text-name-education {
+            width: 100%;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 16px;
+          }
+
+          .edit-educations {
+            margin-right: 40px;
+            cursor: pointer;
+          }
+        }
+
+        .educations-text {
+          margin-top: 20px;
+
+          .main-text {
+            margin-top: 15px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+
+            .education-date {
+              margin-top: 0;
+            }
+
+            .text-educations {
+              display: flex;
+
+              .texts-item {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .skills {
+        margin-top: 50px;
+
+        .name-skills {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .text-name-skills {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 16px;
+          }
+
+        }
+
+        .text-skills {
+          margin-top: 10px;
+
+          .main-text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 16px;
+            margin-right: 10px;
+            display: inline-block!important;
+          }
+        }
+
+        .edit-skills {
+          margin-right: 40px;
+          cursor: pointer;
+        }
+      }
+      .text-about-me-planshet{
+        display: none;
+      }
+
+      .location {
+        margin-top: 50px;
+        width: 100%;
+
+        .for-location-icon {
+          width: 100%;
+          display: flex;
+
+          .icon-for-location {
+            margin-right: 10px;
+          }
+
+          .text-location {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+
+          }
+
+        }
+
+      }
+
+      .footer-profile {
+        margin-bottom: 10px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .since-member {
+          font-weight: 500;
+          font-size: 11.88px;
+          line-height: 9px;
+
+          p {
+            font-weight: 300;
+            font-size: 8.64px;
+            line-height: 12px;
+          }
+        }
+
+        .icon-for-phone {
+          img {
+            cursor: pointer;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .myResume {
+    .about-resume {
+      display: block;
+
+      .resume-left {
+        width: 100%;
+
+        .line-blue-mobile {
+          display: block;
+        }
+
+        .box-for-planshet {
+          display: block;
+          width: 100%;
+
+          .box-for-total {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            .totals {
+              margin-top: 20px;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+
+              p {
+                margin-top: 10px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 16px;
+                text-align: center;
+                color: #8D8D8D;
+              }
+            }
+
+            .verification {
+              display: flex;
+              align-items: center;
+
+              .text-verification {
+                margin-right: 20px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+              }
+
+              .icon-verification {
+                position: relative;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .tick {
+                  top: 0;
+                  position: absolute;
+                  z-index: 10;
+                }
+
+                .tick2 {
+                  position: absolute;
+                }
+              }
+            }
+          }
+
+          .line-two-planshet {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+
+            .link-projects {
+              margin-right: 40px;
+
+              .text-name-projects {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+                margin-bottom: 20px;
+              }
+
+              p {
+                font-size: 14px;
+              }
+            }
+
+            .available-times {
+              margin-top: 50px;
+              margin-right: 4%;
+              .available-times-text {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+                display: flex;
+
+                .edit-available {
+                  cursor: pointer;
+                  margin-left: 20px;
+                }
+              }
+
+              .available-times-icon {
+                margin-top: 15px;
+                display: flex;
+                width: 100%;
+
+                .text-available {
+                  display: flex;
+                  font-weight: 500;
+                  font-size: 22px;
+                  line-height: 27px;
+
+                  p {
+                    font-size: 18px;
+                    margin-left: 10px;
+                    font-weight: normal;
+                  }
+                }
+
+
+              }
+            }
+
+          }
+
+
+        }
+
+        .box-for-planshet-two {
+          margin-top: 30px  ;
+          display: block;
+          width: 100%;
+          .educations {
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            .name-education {
+              width: 100%;
+              display: flex;
+              align-items: center;
+
+              .text-name-education {
+                margin-right: 20px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 16px;
+              }
+
+              .edit-educations {
+                cursor: pointer;
+              }
+            }
+
+            .educations-text {
+              margin-top: 20px;
+
+              .main-text {
+                margin-top: 15px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 27px;
+
+                .education-date {
+                  margin-top: 0;
+                }
+
+                .text-educations {
+                  display: flex;
+
+                  .texts-item {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+
+          }
+          .line-two-planshet{
+            width: 100%;
+            padding: 0 12% 0 0;
+            display: flex;
+            justify-content: space-between;
+            .skills {
+              .name-skills {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .text-name-skills {
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 16px;
+                }
+
+              }
+
+              .text-skills {
+                display: flex !important;
+                margin-top: 10px;
+
+                .main-text {
+                  font-weight: normal;
+                  font-size: 18px;
+                  line-height: 16px;
+                  margin-right: 10px;
+                }
+              }
+
+              .edit-skills {
+                margin-right: 40px;
+                cursor: pointer;
+              }
+            }
+            .planshet-box{
+              .location {
+                width: 100%;
+
+                .for-location-icon {
+                  width: 100%;
+                  display: flex;
+
+                  .icon-for-location {
+                    margin-right: 10px;
+                  }
+
+                  .text-location {
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 17px;
+
+                  }
+
+                }
+
+              }
+
+              .footer-profile {
+                margin-bottom: 10px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .since-member {
+                  font-weight: 500;
+                  font-size: 11.88px;
+                  line-height: 9px;
+
+                  p {
+                    font-weight: 300;
+                    font-size: 8.64px;
+                    line-height: 12px;
+                  }
+                }
+
+                .icon-for-phone {
+                  img {
+                    cursor: pointer;
+                    margin-right: 15px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+        .avatar-person {
+          .like-person {
+            .edit-profile {
+              display: none;
+            }
+          }
+        }
+        .text-about-me-planshet{
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 16px;
+          display: flex;
+          .edit-profile{
+            margin-left: 20px;
+          }
+        }
+        .box-for-experience {
+          margin-top: 15px;
+        }
+        .box-for-experience2 {
+          margin-top: 15px;
+        }
+
+      }
+
+      .resume-right {
+        display: none;
+      }
+    }
+  }
+
+}

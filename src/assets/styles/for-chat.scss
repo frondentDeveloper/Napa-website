@@ -1,0 +1,590 @@
+.chat-for-freelancer {
+  width: 100%;
+  height: 100vh;
+  padding: 2% 4%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .box-for-planshet{
+   display: none;
+  }
+
+  .forPrev {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  .body-chats {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+    justify-content: center;
+
+    .chat-box-left {
+      margin-right: 30px;
+      width: 65%;
+      height: auto;
+      background: #FFFFFF;
+      box-shadow: 0px -2px 14px rgba(0, 0, 0, 0.16), 0px 40px 45px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+
+      .chat-box {
+        position: relative;
+        width: 100%;
+        height: 85%;
+        overflow-y: auto;
+        padding: 20px 20px 40px 40px;
+        .freelancer-message-box{
+          bottom: 20px;
+          right:20px;
+          position: absolute;
+          width: 40%;
+          height: auto;
+          border-radius: 26px;
+          img {
+            width: 100%;
+          }
+        }
+
+      }
+
+      .send-message-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        padding: 0 15px 0 15px;
+
+        .button-send-file {
+          width: 41px;
+          height: 41px;
+          border-radius: 50%;
+          background-color: rgba(29, 113, 184, 0.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .button-send-text {
+          width: 93%;
+          height: 50px;
+          box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.11);
+          border-radius: 25px;
+          padding: 2px 5px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            padding-left: 20px;
+            border-radius: 25px;
+            width: 90%;
+            height: 90%;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+
+          }
+
+          .box-icon-send {
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            background-color: #357ECE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+
+    .chat-box-right {
+      overflow-y: auto;
+      background: #FFFFFF;
+      box-shadow: 0px 40px 41px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
+      width: 30%;
+      height: 100%;
+      padding: 20px 40px 20px 20px;
+      box-sizing: border-box;
+
+      .box-top {
+        width: 100%;
+        height: 92%;
+
+        .company-name {
+          width: 100%;
+          height: 17%;
+          display: flex;
+          align-items: center;
+
+          .logo-company {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .name-company {
+            margin-left: 16px;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 16px;
+
+            .name-two {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 16px;
+              margin-top: 10px;
+            }
+          }
+
+        }
+
+        .about-company {
+          margin-top: 40px;
+
+          .tittle-company {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        .link-company {
+          margin-top: 40px;
+
+          .link-title {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 16px;
+            margin-bottom: 10px;
+            text-decoration-line: none;
+          }
+          .company-link{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+            color: rgba(0, 0, 0, 0.9);
+          }
+
+
+        }
+      }
+
+      .box-bottom {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .phone-company {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .member-since {
+            .title-since {
+              font-weight: 500;
+              font-size: 13.2px;
+              line-height: 10px;
+            }
+
+            font-weight: 300;
+            font-size: 9.6px;
+            line-height: 13px;
+          }
+
+          .contact-company {
+            img {
+              cursor: pointer;
+              margin-right: 12px;
+            }
+          }
+
+        }
+      }
+
+
+    }
+
+
+  }
+}
+
+.chat-for-company {
+  width: 100%;
+  height: 100vh;
+  padding: 2% 4%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .box-for-planshet{
+    display: none;
+  }
+
+  .forPrev {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  .body-chats {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+    justify-content: center;
+
+    .chat-box-left {
+      margin-right: 30px;
+      width: 65%;
+      height: auto;
+      background: #FFFFFF;
+      box-shadow: 0px -2px 14px rgba(0, 0, 0, 0.16), 0px 40px 45px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+
+      .chat-box {
+        position: relative;
+        width: 100%;
+        height: 85%;
+        overflow-y: auto;
+        padding: 20px 20px 40px 40px;
+        .company-message-box{
+          bottom: 20px;
+          right:20px;
+          position: absolute;
+          width: 40%;
+          height: auto;
+          border-radius: 26px;
+          img {
+            width: 100%;
+          }
+        }
+
+      }
+
+      .send-message-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        padding: 0 15px 0 15px;
+
+        .button-send-file {
+          width: 41px;
+          height: 41px;
+          border-radius: 50%;
+          background-color: rgba(29, 113, 184, 0.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .button-send-text {
+          width: 93%;
+          height: 50px;
+          box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.11);
+          border-radius: 25px;
+          padding: 2px 5px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            padding-left: 20px;
+            border-radius: 25px;
+            width: 90%;
+            height: 90%;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+
+          }
+
+          .box-icon-send {
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            background-color: #357ECE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+
+    .chat-box-right {
+      overflow-y: auto;
+      background: #FFFFFF;
+      box-shadow: 0px 40px 41px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
+      width: 30%;
+      height: 100%;
+      padding: 20px 40px 20px 20px;
+      box-sizing: border-box;
+
+      .box-top {
+        width: 100%;
+        height: 92%;
+
+        .freelancer-name {
+          width: 100%;
+          height: 17%;
+          display: flex;
+          align-items: center;
+
+          .avatar-person {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+
+          .name-freelancer {
+            margin-left: 16px;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 16px;
+
+            .name-two {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 16px;
+              margin-top: 10px;
+            }
+          }
+
+        }
+
+        .skills {
+          margin-top: 40px;
+
+          .tittle-skills {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+          .skill-person{
+            font-size: 18px;
+            line-height: 25px;
+            p{
+              display: inline-block;
+              margin-right: 5px;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 16px;
+              color: rgba(0, 0, 0, 0.9);
+            }
+          }
+
+        }
+
+        .portfolio-person {
+          margin-top: 40px;
+          .link-name-portfolio{
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 16px;
+            margin-bottom: 10px;
+          }
+
+          .link-portfolio{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+            color: rgba(0, 0, 0, 0.9);
+          }
+
+
+        }
+
+        .location-freelancer{
+          width: 100%;
+          display: flex;
+          margin-top: 40px;
+          .img-location{
+            margin-right: 15px;
+          }
+
+          p{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 19px;
+          }
+        }
+      }
+
+      .box-bottom {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .phone-company {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .member-since {
+            .title-since {
+              font-weight: 500;
+              font-size: 13.2px;
+              line-height: 10px;
+            }
+
+            font-weight: 300;
+            font-size: 9.6px;
+            line-height: 13px;
+          }
+
+          .contact-company {
+            img {
+              cursor: pointer;
+              margin-right: 12px;
+            }
+          }
+
+        }
+      }
+
+
+    }
+
+
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .chat-for-freelancer {
+    .box-for-planshet{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .person-avatar{
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        margin-right: 15px;
+        img{
+          width: 100%;
+        }
+        overflow: hidden;
+      }
+      .person-name{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 16px;
+        margin-right: 55px;
+      }
+      .person-phone{
+      }
+    }
+    .body-chats {
+      .chat-box-left {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .chat-box-right {
+        display: none;
+      }
+
+
+    }
+  }
+
+
+  .chat-for-company {
+    .box-for-planshet{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .person-avatar{
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        margin-right: 15px;
+        img{
+          width: 100%;
+        }
+        overflow: hidden;
+      }
+      .person-name{
+        margin-right: 55px;
+        .name-person{
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 16px;
+        }
+       .degree-person{
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 16px;
+         margin-top: 10px;
+       }
+      }
+    }
+    .body-chats {
+      .chat-box-left {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .chat-box-right {
+        display: none;
+      }
+
+
+    }
+  }
+
+}
+
+
+
