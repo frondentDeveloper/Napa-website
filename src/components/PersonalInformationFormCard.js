@@ -74,14 +74,13 @@ const PersonalInformationFormCard = (props) => {
           <div className="upload-fields">
             <p>Upload your photo (optional)</p>
             <div className="buttons">
-
               <label htmlFor="#" className="custom-btn upload-btn">
                 <input
                   onChange={e => onUpload(e)}
                   type="file"
-                  id={uuidv4()}
+                  // id={uuidv4()}
                   className="file-input"
-                  accept="image/png, image/jpeg"
+
                 />
                 Upload
               </label>

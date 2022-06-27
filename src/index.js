@@ -23,15 +23,18 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <App/>
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+
+        <BrowserRouter>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </BrowserRouter>
+
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 

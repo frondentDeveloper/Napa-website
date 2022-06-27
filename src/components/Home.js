@@ -291,9 +291,7 @@ const Home = (props) => {
             <Button className="custom-btn">Search</Button>
           </div>
         </form>
-        <div
-
-          className={
+        <div className={
             margin === 0 ? "pattern" : margin === -100
               ? "pattern search-talent-pattern" : margin === -200
                 ? "pattern post-job-pattern" : "pattern contact-us-pattern"

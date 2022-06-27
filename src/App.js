@@ -34,6 +34,7 @@ import BestMatchesTalants from "./components/talants/bestMatches";
 import NewTalants from "./components/talants/NewTalants";
 import Saved from "./components/talants/Saved";
 import SignUpPage from "./components/sign-up-page";
+import CompleteForm from "./components/completeForm/CompleteForm";
 
 const enhancer = connect(
     ({resumes: {doneResumes}}) =>
@@ -51,11 +52,13 @@ const App = props => {
 
     return (
         <div className="app-wrapper">
-            <Steps topSpace={topSpace}/>
+            {/*<Steps topSpace={topSpace}/>*/}
             <Routes>
                 <Route path={RoutesPath.home} element={<Home addedTopMargin={addedTopMargin}/>}/>
                 <Route path={RoutesPath.login} element={<Login/>}/>
-                <Route path={RoutesPath.templates} element={<Personalization/>}/>
+                <Route path="/complete" element={<CompleteForm/>}/>
+
+                {/*<Route path={RoutesPath.templates} element={<Personalization/>}/>*/}
                 <Route path={RoutesPath.postJop} element={<PostJop/>}/>
                 <Route path={RoutesPath.postJop2} element={<PostJop2/>}/>
                 <Route path={RoutesPath.postJop3} element={<PostJop3/>}/>

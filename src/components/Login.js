@@ -16,7 +16,7 @@ const enhancer = connect(({size: {size}, auth: {authEmailInitialValue, authPassw
 const Login = props => {
     const dispatch = useDispatch()
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     useEffect(() => {
         // dispatch(displayCircle());
@@ -61,8 +61,10 @@ const Login = props => {
                             <Button className="custom-btn" onClick={() => {
                                 dispatch(addSize(props.size));
                                 dispatch(signedWizardNextSteps());
-                                navigate(RoutesPath.templates)
-                            }}>Continue</Button>
+                                navigate("/complete")
+                            }}>
+                                Continue
+                            </Button>
                         </div>
                         <div className="bottom-title">Or continue with</div>
                         <div className="bottom-icons">
